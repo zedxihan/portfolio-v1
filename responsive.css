@@ -1,0 +1,365 @@
+/* ================================================= */
+/*                LARGE DESKTOP (1600px+)            */
+/* ================================================= */
+
+@media (min-width: 1600px) {
+  section {
+    padding: 9rem 14%;
+  }
+}
+
+
+/* ================================================= */
+/*                LAPTOPS (≤1400px)                  */
+/* ================================================= */
+
+@media (max-width: 1400px) {
+
+  section {
+    padding: 7rem 8%;
+  }
+
+  /* About */
+  .about-container {
+    gap: 4rem;
+  }
+
+  /* Experience */
+  .experience-info {
+    gap: 3rem;
+  }
+}
+
+
+/* ================================================= */
+/*                TABLETS (≤992px)                   */
+/* ================================================= */
+
+@media (max-width: 992px) {
+
+  section {
+    padding: 6rem 7%;
+  }
+
+  /* ================= HEADER ================= */
+
+  .visit-btn {
+    display: none;
+  }
+
+  /* ================= ABOUT ================= */
+
+  .about-container {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about img {
+    width: 250px;
+  }
+
+  .info-box h1 {
+    font-size: 2.8rem;
+  }
+
+  .info-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .info-box span {
+    font-size: 1.8rem;
+  }
+
+  /* ================= EXPERIENCE ================= */
+
+  .experience-info {
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ================= EDUCATION ================= */
+
+  .education-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .edu-block p {
+    margin-left: 0;
+  }
+}
+
+
+/* ================================================= */
+/*          SMALL TABLET HEADER FIX                  */
+/* ================================================= */
+@media (min-width: 651px) and (max-width: 992px) {
+
+    header{
+        width: 95%;
+        max-width: 725px;
+    }
+    .nav-list{
+        gap: 1.5rem;
+    }
+}
+
+
+/* ================================================= */
+/*                MOBILE (≤650px)                    */
+/* ================================================= */
+
+@media (max-width: 650px) {
+
+  section {
+    padding: 5rem 6%;
+  }
+
+  /* ================= HEADER ================= */
+
+  header {
+    padding: 0.8rem 1.5rem;
+    justify-content: space-between;
+  }
+
+  .hamburger-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+
+    display: block;
+
+    margin-top: 10px;
+    padding: 0;
+
+    background-color: #1f1f2e;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    transition: var(--transition);
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  /* Hamburger Animation */
+  .hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* ================= ABOUT ================= */
+
+  .about img {
+    width: 225px;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  .info-box h1 {
+    font-size: 2.3rem;
+  }
+
+  .info-box span {
+    font-size: 1.4rem;
+  }
+
+  /* ================= EXPERIENCE / SKILLS ================= */
+
+  .grid-card {
+    padding: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .article-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .experience img {
+    width: 300px;
+  }
+
+  /* ================= PROJECTS ================= */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    width: 100%;
+    max-width: 85%;
+  }
+
+  /* ================= FOOTER ================= */
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+/* ================================================= */
+/*                SMALL MOBILE (≤480px)              */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+  section {
+    padding: 4rem 5%;
+  }
+
+  /* ================= HEADER ================= */
+
+  header {
+    top: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  /* ================= ABOUT ================= */
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .info-box h1 {
+    font-size: 1.9rem;
+  }
+
+  .info-box span {
+    font-size: 1.25rem;
+  }
+
+  .info-box h3 {
+    font-size: 1.1rem;
+  }
+
+  /* ================= EXPERIENCE / SKILLS ================= */
+
+  .grid-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ================= EDUCATION ================= */
+
+  .edu-title h3 {
+    font-size: 1.1rem;
+  }
+
+  .edu-block p {
+    font-size: 0.95rem;
+  }
+
+  /* ================= CONTACT ================= */
+
+  .contact-info-container {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0.2rem;
+    box-sizing: border-box;
+  }
+
+  .contact-info p {
+    font-size: 1.05rem;
+  }
+
+  /* ================= PROJECTS ================= */
+
+  .project-card {
+    padding: 1.8rem 0.9rem;
+  }
+
+  /* ================= FOOTER ================= */
+
+  footer {
+    height: auto;
+    padding: 1rem 0;
+  }
+}
+
+
+/* ================================================= */
+/*             LANDSCAPE PHONE FIX                   */
+/* ================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+  section {
+    min-height: auto;
+    padding: 4rem 6%;
+  }
+
+  .about {
+    min-height: auto;
+  }
+
+  header {
+    top: 0.5rem;
+  }
+}
+
+
+/* ================================================= */
+/*               ACTIVE NAV COLOR                    */
+/* ================================================= */
+
+.nav-list a.active {
+  color: var(--hover-accent);
+  font-weight: 500;
+}
+
+
+/* ================================================= */
+/*             SCROLL REVEAL ANIMATION               */
+/* ================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
